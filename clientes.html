@@ -10,7 +10,6 @@
     nav { background:rgba(11,61,145,0.1); padding:15px; text-align:center; }
     nav a { color:#0b3d91; margin:0 15px; font-weight:500; text-decoration:none; }
     section { max-width:900px; margin:40px auto; padding:40px 20px; background:white; border-radius:8px; box-shadow:0 4px 20px rgba(0,0,0,0.08); }
-    .chart, .imagen { max-width:100%; height:auto; border-radius:8px; margin:20px 0; }
     ul { list-style:none; padding:0; }
     li { padding:15px; margin:10px 0; background:#f0f8ff; border-left:5px solid #0b3d91; border-radius:4px; }
     .cta { background:#0b3d91; color:white; padding:15px 30px; border-radius:5px; text-decoration:none; display:inline-block; font-weight:bold; }
@@ -19,6 +18,10 @@
     table { width:100%; border-collapse:collapse; margin:20px 0; font-size:14px; }
     th, td { padding:12px; text-align:left; border-bottom:1px solid #ddd; }
     th { background:#0b3d91; color:white; }
+    .roi-table { background:#f8f9fa; padding:25px; border-radius:8px; border-left:5px solid #0b3d91; margin:20px 0; }
+    .roi-table table th { padding:15px; text-align:left; }
+    .roi-table table td { padding:12px; }
+    .roi-table table td:first-child { font-weight:bold; border-left:4px solid #0b3d91; }
     @media (max-width:600px) { section { padding:20px 15px; } table { font-size:12px; } }
   </style>
 </head>
@@ -32,40 +35,38 @@
   </nav>
   <section>
     <h2>Beneficios Cuantificados</h2>
-    <img src="https://images.unsplash.com/photo-1587331712021-7c566599c286?w=1200&auto=format&fit=crop" alt="Invernaderos y crates Almería" class="imagen">
     
-<h3>ROI vs Tradicional</h3>
-<img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&h=400&fit=crop&crop=entropy&auto=format&q=80" alt="Invernaderos Almería tomates pimientos" style="width:100%;max-height:400px;object-fit:cover;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+    <h3 style="color:#0b3d91;">ROI vs Tradicional</h3>
+    <div class="roi-table">
+      <table>
+        <tr style="background:#0b3d91;color:white;">
+          <th style="padding:15px;text-align:left;">📊 Métrica</th>
+          <th style="padding:15px;">Pinocchio 2.0</th>
+          <th style="padding:15px;text-align:center;">Tradicional</th>
+        </tr>
+        <tr style="background:#f8f9fa;">
+          <td>ROI 3 años</td>
+          <td style="color:#0b3d91;font-size:20px;font-weight:bold;">220%</td>
+          <td style="color:#666;">50%</td>
+        </tr>
+        <tr>
+          <td>Reducción desperdicio</td>
+          <td style="color:#0b3d91;font-weight:bold;">8%</td>
+          <td style="color:#666;">0%</td>
+        </tr>
+        <tr style="background:#f8f9fa;">
+          <td>Ahorro químicos</td>
+          <td style="color:#0b3d91;font-weight:bold;">5%</td>
+          <td style="color:#666;">0%</td>
+        </tr>
+        <tr>
+          <td>Reducción CO2 lab</td>
+          <td style="color:#0b3d91;font-weight:bold;">70%</td>
+          <td style="color:#666;">0%</td>
+        </tr>
+      </table>
+    </div>
 
-<table style="width:100%;border-collapse:collapse;margin:20px 0;font-size:16px;">
-  <tr style="background:#0b3d91;color:white;">
-    <th style="padding:15px;text-align:left;border-radius:8px 0 0 0;">Métrica</th>
-    <th style="padding:15px;border-radius:0;">Pinocchio 2.0</th>
-    <th style="padding:15px;text-align:center;border-radius:0 8px 0 0;">Tradicional</th>
-  </tr>
-  <tr style="background:#f8f9fa;">
-    <td style="padding:12px;font-weight:bold;border-left:4px solid #0b3d91;">ROI 3 años</td>
-    <td style="padding:12px;color:#0b3d91;font-weight:bold;font-size:18px;">220%</td>
-    <td style="padding:12px;color:#666;">50%</td>
-  </tr>
-  <tr>
-    <td style="padding:12px;font-weight:bold;border-left:4px solid #0b3d91;">Reducción desperdicio</td>
-    <td style="padding:12px;color:#0b3d91;font-weight:bold;">8%</td>
-    <td style="padding:12px;color:#666;">0%</td>
-  </tr>
-  <tr style="background:#f8f9fa;">
-    <td style="padding:12px;font-weight:bold;border-left:4px solid #0b3d91;">Ahorro químicos</td>
-    <td style="padding:12px;color:#0b3d91;font-weight:bold;">5%</td>
-    <td style="padding:12px;color:#666;">0%</td>
-  </tr>
-  <tr>
-    <td style="padding:12px;font-weight:bold;border-left:4px solid #0b3d91;">Reducción CO2 lab</td>
-    <td style="padding:12px;color:#0b3d91;font-weight:bold;">70%</td>
-    <td style="padding:12px;color:#666;">0%</td>
-  </tr>
-</table>
-
-    
     <ul>
       <li><strong>ROI 75 días mediana coop:</strong> Ahorro postcosecha 8% (1,2M€/año valor frutas).</li>
       <li><strong>Mercado objetivo:</strong> 33.000 ha invernaderos Almería, 3,3M toneladas hortalizas/año, 8.000 productores.</li>
@@ -87,7 +88,7 @@
       <li><strong>¿Escalable?</strong> De 1 sensor piloto a 100+ red invernaderos, cloud auto-scale.</li>
     </ul>
     
-    <a href="index.html#formulario" class="cta">Solicitar Tu Piloto GRATIS</a>
+    <a href="index.html#contacto" class="cta">Solicitar Tu Piloto GRATIS</a>
   </section>
 </body>
 </html>
