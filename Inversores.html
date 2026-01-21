@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inversores | Singularidad 2030</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #0f172a; 
+            --card-bg: #1e293b;
+            --accent-green: #22c55e; 
+            --text-main: #f1f5f9; 
+            --text-muted: #94a3b8; 
+            --soft-blue: #334155;  
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            border-top: 5px solid var(--accent-green);
+        }
+
+        h1.title {
+            color: var(--accent-green);
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            color: var(--accent-green);
+            border-bottom: 1px solid var(--soft-blue);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.1em;
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            color: var(--text-muted);
+        }
+
+        ul li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent-green);
+        }
+
+        ul ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: var(--soft-blue);
+            margin: 30px 0;
+        }
+
+        .contact-box {
+            background: #0f172a;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 40px;
+            border: 1px solid var(--soft-blue);
+        }
+
+        .contact-box a {
+            color: var(--accent-green);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .investment-highlight {
+            background: rgba(34, 197, 94, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-left: 4px solid var(--accent-green);
+        }
+
+        .footer-nav {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .btn-home {
+            display: inline-block;
+            padding: 12px 24px;
+            border: 1px solid var(--accent-green);
+            color: var(--accent-green);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-home:hover {
+            background: var(--accent-green);
+            color: var(--primary-bg);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 class="title">Pinocchio 2.0</h1>
+    <h3 style="color: var(--text-muted); font-weight: 300;">Oportunidad de inversión agritech</h3>
+
+    <p>
+    Pinocchio 2.0 es una nariz electrónica portátil basada en IA que estima en 30 segundos
+    la maduración óptima y el nivel relativo de tratamientos químicos en tomate, pimiento y pepino.
+    </p>
+
+    <p>
+    Desarrollado en Almería, combina sensores MOS de bajo coste con una red neuronal
+    entrenada con más de 500 muestras reales, alcanzando una precisión validada del <strong>92%</strong>.
+    </p>
+
+    <h2>Producto</h2>
+    <ul>
+        <li><strong>Hardware:</strong> 4 sensores MOS: MQ135, MQ3, MQ136, MQ138.</li>
+        <li><strong>Procesamiento:</strong> Arduino Nano + MCP3008 ADC.</li>
+        <li><strong>IA:</strong> MLP en Python (scikit-learn / TensorFlow).</li>
+        <li><strong>Métricas clave:</strong>
+            <ul>
+                <li>Maduración (0–100%).</li>
+                <li>Índice químico relativo (0–100).</li>
+                <li>Intensidad aromática (0–10).</li>
+            </ul>
+        </li>
+        <li><strong>Uso:</strong> Plug & Play, sin necesidad de conexión cloud ni suscripciones.</li>
+    </ul>
+
+    <h2>Ventaja competitiva</h2>
+    <p>
+    Fiabilidad comparable a laboratorio con un coste hasta 10 veces inferior. 
+    Contamos con arquitectura cerrada, dataset propio y reentrenamiento incremental continuo.
+    </p>
+
+    <h2>Mercado</h2>
+    <ul>
+        <li>33.000 ha de invernaderos en Almería.</li>
+        <li>8.000 productores objetivo.</li>
+        <li>Penetración inicial: 5–10% (400–800 unidades).</li>
+        <li><strong>Precio por unidad: 377 €</strong>.</li>
+    </ul>
+
+    <h2>Modelo financiero (3 años)</h2>
+    <ul>
+        <li>Ingresos acumulados: <strong>904.800 €</strong>.</li>
+        <li>Beneficio neto: <strong>330.000 €</strong>.</li>
+        <li>ROI estimado: <strong>660%</strong>.</li>
+        <li>Break-even: <strong>mes 4</strong>.</li>
+    </ul>
+
+    <h2>Propuesta de inversión</h2>
+    <div class="investment-highlight">
+        <p>Inversión solicitada: <strong>50.000 €</strong>.</p>
+        <p>Participación ofrecida: <strong>20%</strong>.</p>
+        <p>Valoración pre-money: <strong>200.000 €</strong>.</p>
+    </div>
+
+    <p style="margin-top:20px;">Uso de fondos:</p>
+    <ul>
+        <li>Certificación CE.</li>
+        <li>Primera serie (50 unidades).</li>
+        <li>Desarrollo software y Marketing.</li>
+        <li>Capital circulante.</li>
+    </ul>
+
+    <p style="margin-top: 30px; font-size: 0.9em;">
+        Desarrollo íntegramente local en Almería bajo la sociedad <strong>Singularidad 2030, SL</strong>.
+    </p>
+
+    <div class="contact-box">
+        <p style="color: var(--text-main); margin-bottom: 15px;">Para más información o contacto directo:</p>
+        <a href="mailto:singularidad2030sl@gmail.com">
+            singularidad2030sl@gmail.com
+        </a>
+    </div>
+
+    <div class="footer-nav">
+        <a href="index.html" class="btn-home">Volver al Inicio</a>
+    </div>
+
+</div>
+
+</body>
+</html>
